@@ -55,5 +55,5 @@ class TestGeoqueryViews(TestCase):
         response = client.get(url)
         result_var = response.context['result']
 
-        #  Verify that result is a distance between 4 and 5 (e.g., 0.445227747111)    
-        self.assertEqual(result_var > .4 and result_var < .3, True)
+        #  Verify that result is a distance between .4 and .5 (e.g., 0.445227747111)    
+        self.assertEqual(result_var > .4 and result_var < .5, True)
